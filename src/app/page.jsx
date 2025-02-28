@@ -82,14 +82,3 @@ export default function Home() {
     </main>
   );
 }
- // <ul>
-                  //     <li>
-                  //       <a href="https://www.facebook.com/janreycyril.faderanga"><img src={colored.facebook}></img></a>
-                  //     </li>
-                  //     <li>
-                  //       <a href="https://www.instagram.com/jeysi_faderanga/"> </a>
-                  //     </li>
-                  //     <li>
-                  //       <a href="https://twitter.com/JeysiFad">  </a>
-                  //     </li>
-                  // </ul>

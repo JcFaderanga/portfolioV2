@@ -1,6 +1,7 @@
 
 export const position = 'Front End Developer';
-
+export const aboutMe = "Hello, my name is Jc Faderanga and I am an aspiring web developer and software engineer. I am currently a student of Information Technology at Pamantasan ng Lunsod ng Muntinlupa. I am passionate about coding and find it fun and especially enjoyable. For me, programming is not just about codes, it's about life.";
+export const helloWorld = "Wrote my first line of code, marking the start of my journey, experience, and passion as a developer.";
 export const personalInfo = {
     first_name: 'JC',
     last_name: 'Faderanga',
@@ -21,39 +22,46 @@ export const socialMedia = {
 export const education = [
     {
         school: 'Pamantasan ng Lungsod ng Muntinlupa',
-        date: '2024 - Present',
+        year: '2024 - Present',
         level: 'College',
         course: 'Bachelor of Science in Information Technology',
     },
     {
         school: 'Pamantasan ng Lungsod ng Muntinlupa',
-        date: '2021 - 2023',
+        year: '2021 - 2023',
         level: 'Vocational',
         course: 'Associate in Computer Technology',
     },
     {
         school: 'Muntinlupa National High School',
-        date: '2019 - 2021',
+        year: '2019 - 2021',
         level: 'Senior High School',
-        course: 'ICT',
+        course: 'Senior High School',
     },
     {
         school: 'Lakeview Integrated School',
-        date: '2016 - 2019',
+        year: '2016 - 2019',
         level: 'Junior High School',
+        course: 'Junior High School',
     },
     {
         school: 'Muntinlupa Elementary School',
-        date: '2010 - 2016',
+        year: '2010 - 2016',
         level: 'Elementary',
+        course: 'Muntinlupa Elementary School',
     },
 ]
 
 export const workExperience = [
     {
+        company: 'Muntinlupa City Police Station',
+        date: 'February - Present',
+        position: 'Internship - Tech/IT Support',
+    },
+    {
         company: 'Teleperformance',
         date: 'September 2023 - January 2024',
-        position: 'Technical Support Representative',
+        position: 'Customer Service Representative',
     },
 ]
 
