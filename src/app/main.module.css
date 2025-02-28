@@ -1,0 +1,32 @@
+.slide{
+    -webkit-animation: slideUp .7s ease-in-out; 
+    }
+    
+@-webkit-keyframes slideUp {
+    0% {
+    height: 50%;
+    }
+    50% {
+        height: 50%;
+        }
+    100% {
+    height: 20%;
+    }
+}
+
+.popIn{
+    -webkit-animation: popIn .5s cubic-bezier(0.69,-0.33, 0.23, 1.24);
+}
+
+@-webkit-keyframes popIn {
+   0% {
+        opacity: 0;
+        -webkit-transform: scale(.5);
+        display: none;
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        display: block;
+    }
+}
