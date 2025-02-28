@@ -44,12 +44,12 @@ export const education = [
         level: 'Junior High School',
         course: 'Junior High School',
     },
-    {
-        school: 'Muntinlupa Elementary School',
-        year: '2010 - 2016',
-        level: 'Elementary',
-        course: 'Muntinlupa Elementary School',
-    },
+    // {
+    //     school: 'Muntinlupa Elementary School',
+    //     year: '2010 - 2016',
+    //     level: 'Elementary',
+    //     course: 'Muntinlupa Elementary School',
+    // },
 ]
 
 export const workExperience = [

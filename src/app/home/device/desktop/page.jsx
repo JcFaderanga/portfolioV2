@@ -6,21 +6,22 @@ import FadeUp from '@/ui/animation/fadeUp';
 import FadeIn from '@/ui/animation/fadeIn';
 export default function Desktop(){
     return(
-        <section className="mt-[65px] px-4 mx-auto lg:max-w-[1700px] h-[calc(100%-60px)] flex justify-center item-center">
+        <>
+        <section className="mt-[65px] px-8 mx-auto lg:max-w-[1300px] h-[calc(100%-60px)] flex justify-center item-center">
             <div className="grid gap-3
-                lg:grid-cols-[minmax(0,280px)_minmax(0,410px)_minmax(0,570px)_minmax(0,410px)]
+                lg:grid-cols-[_minmax(0,30%)_minmax(0,60%)_minmax(0,30%)]
             ">  
                 {/* 1st col */}
-                <div className=" bg-white py-2 
+                {/* <div className=" bg-white py-2 
                     lg:col-start-1 lg:row-start-1 lg:row-span-3 
                 ">
                     <FadeUp delay={1.2}>
                         <TechStack />
                     </FadeUp>
-                </div>
+                </div> */}
                 {/* 2nd col */}
                 <div className=" bg-white py-2 
-                    lg:col-start-2 lg:row-start-1 lg:row-span-2
+                    lg:col-start-1 lg:row-start-1 lg:row-span-2
                 ">
                     <FadeUp delay={0.6}>
                         <AboutMe/>
@@ -33,7 +34,7 @@ export default function Desktop(){
 
                 {/* 3rd col */}
                 <div className=" bg-white 
-                    lg:col-start-3 py-2 
+                    lg:col-start-2 py-2 
                 ">
                     <FadeUp delay={.4}>
                         <Profile />
@@ -46,7 +47,7 @@ export default function Desktop(){
 
                 {/* 4th col */}
                 <div className=" bg-white py-2 
-                    lg:col-start-4 
+                    lg:col-start-3 
                 ">
                     <FadeUp delay={0.8}>
                         <Experience/>
@@ -59,5 +60,8 @@ export default function Desktop(){
                 </div>
             </div>
         </section>
+
+        {/* <div className="box-shadow h-64 bg-white">xcv</div> */}
+       </> 
     );
 }

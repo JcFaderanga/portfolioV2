@@ -5,7 +5,7 @@ import {education } from "../../lib/data";
 
 const Education = () => {
     return(
-        <div className="box-shadow pt-6 pb-3 rounded-xl px-8">
+        <div className=" pt-6 pb-3 rounded-xl px-2">
             <h1 className="text-xl font-bold">Education</h1>
 
             <div className="relative border-l border-[#333333] ml-2">

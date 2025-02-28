@@ -10,16 +10,11 @@ export default function Tablet(){
                 
             ">  
             {/* 1 */}
-                <div >
-                    <FadeUp delay={1} className="py-2" >
-                        <Profile />
-                    </FadeUp> 
-                </div>
-
+                <div ><FadeUp delay={.3} className="py-2" ><Profile /></FadeUp></div>
             {/* 2 */}
-                <div className=" bg-white py-2 "><Social/></div>
+                <div className=" bg-white py-2 "><FadeUp delay={.4} className="py-2" ><Social/></FadeUp></div>
             {/* 3 */}
-                <div className=" bg-white py-2 "><AboutMe/></div>
+                <div className=" bg-white py-2 "><FadeUp delay={.6} className="py-2" ><AboutMe/></FadeUp></div>
             {/* 4 */}
                 <div className=" bg-white py-2 "><Experience/></div>
             {/* 5 */}
