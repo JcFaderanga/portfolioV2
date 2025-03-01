@@ -2,12 +2,14 @@
 import React from "react";
 import Image from "next/image";
 import {education } from "../../lib/data";
-
+import { BookOpen } from 'lucide-react';
 const Education = () => {
     return(
         <div className=" pt-6 pb-3 rounded-xl px-2">
-            <h1 className="text-xl font-bold">Education</h1>
-
+            <div className="flex items-center py-2">
+                <BookOpen />
+                <h1 className="text-xl font-bold px-2">Education</h1>
+            </div>
             <div className="relative border-l border-[#333333] ml-2">
                 {education.map((item, index) => (
                     <div key={index} className="mb-8 ml-6 ">

@@ -20,7 +20,7 @@ export default function Desktop(){
                     </FadeUp>
                 </div> */}
                 {/* 2nd col */}
-                <div className=" bg-white py-2 
+                <div className="  py-2 
                     lg:col-start-1 lg:row-start-1 lg:row-span-2
                 ">
                     <FadeUp delay={0.6}>
@@ -33,7 +33,7 @@ export default function Desktop(){
                 </div>
 
                 {/* 3rd col */}
-                <div className=" bg-white 
+                <div className="
                     lg:col-start-2 py-2 
                 ">
                     <FadeUp delay={.4}>
@@ -46,7 +46,7 @@ export default function Desktop(){
                 </div>
 
                 {/* 4th col */}
-                <div className=" bg-white py-2 
+                <div className=" py-2 
                     lg:col-start-3 
                 ">
                     <FadeUp delay={0.8}>

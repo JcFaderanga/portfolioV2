@@ -30,3 +30,9 @@
         display: block;
     }
 }
+
+.background{
+    background-color: #121212;
+    background-image: url("/bg-grid-me.png");
+
+}

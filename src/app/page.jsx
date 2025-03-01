@@ -5,6 +5,8 @@ import { personalInfo,socialMedia,position } from "./lib/data";
 import style from "./main.module.css";
 import Link from "next/link"
 import Image from "next/image"
+import { Facebook , Linkedin, Github} from 'lucide-react';
+
 export default function Home() {
   const [visible, setVisible] = useState(false);
 
@@ -16,10 +18,8 @@ export default function Home() {
   
 
   return (
-    <main className="w-full h-screen flex items-center justify-center">
+    <main className={`w-full h-screen flex items-center justify-center bg-[url('/bg-light-wool.png')] bg-repeat `} >
         <div className={`hidden lg:flex w-full h-[20%] absolute top-0  shadow-lg ${style.slide} bg-white`}></div>
-
-     
           <div className={`${visible && style.popIn}`}>
             <h1 
               className={`${visible ? `block text-3xl font-bold text-center text-shadow` : `hidden`}`}
@@ -37,43 +37,28 @@ export default function Home() {
             <div className="mb-6">
                 <ul 
                   className="flex item-center justify-center px-2 
-                  after:bg-[#333333] after:mt-3 after:w-10 after:border after:h-1 after:ml-5
-                  before:bg-[#333333] before:mt-3 before:w-10 before:border before:h-1 before:mr-5
+                  after:bg-[#333333] after:mt-3 after:w-16 after:border after:h-0.5 after:ml-5
+                  before:bg-[#333333] before:mt-3 before:w-16 before:border before:h-0.5 before:mr-5
                   ">
                     <li className="px-1">
                       <a href={socialMedia.facebook}> 
-                        <Image 
-                          src="/assets/facebook-box.png" 
-                          width={30}
-                          height={30} 
-                          alt="facebook">
-                        </Image>
+                        <Facebook size={25} color="#333333" />
                       </a>
                     </li>
                     <li className="px-1">
                     <a href={socialMedia.linkedin}>
-                        <Image 
-                          src="/assets/linkedin-box.png" 
-                          width={30}
-                          height={30} 
-                          alt="facebook">
-                        </Image>
+                        <Linkedin size={25} color="#333333" />
                       </a>
                     </li>
                     <li className="px-1">
                     <a href={socialMedia.github}>
-                        <Image 
-                          src="/assets/github-box.png" 
-                          width={30}
-                          height={30} 
-                          alt="facebook">
-                        </Image>
+                        <Github size={25} color="#333333" />
                       </a>
                     </li>
                 </ul>
             </div>
             <Link href="/home">
-              <span className=" hover:bg-gray-50 border rounded-md py-1 px-4 ">KNOW MORE</span>
+              <span className=" hover:bg-gray-100 border-gray-300 rounded-md py-1 px-4 mt-4">KNOW MORE</span>
             </Link>
             </div>
           </div>

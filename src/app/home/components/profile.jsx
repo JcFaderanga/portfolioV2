@@ -5,7 +5,7 @@ import Image from "next/image";
 import { personalInfo,position } from "../../lib/data";
 const Profile = () => {
     return(
-        <div className="box-shadow py-7 flex flex-col items-center justify-center rounded-md
+        <div className="box-shadow py-7 flex flex-col items-center justify-center rounded-md bg-white
             md:p-4 md:flex-row md:justify-start
             lg:p-6 lg:flex-wrap
         ">
