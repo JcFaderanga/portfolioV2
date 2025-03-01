@@ -15,7 +15,7 @@ useEffect(()=>{
 },[isShadow])
 
     return (
-        <main className="h-screen ">
+        <main className="h-screen bg-[url('/bg-light-wool.png')] bg-repeat">
         <nav className={` lg:flex w-full h-[60px] absolute top-0 bg-white ${isShadow && 'lg:shadow-lg'} ${styles.slideUp} `}>
              <FadeIn delay={1} className="w-full h-full flex items-center justify-center">
                 <Link href="/" >

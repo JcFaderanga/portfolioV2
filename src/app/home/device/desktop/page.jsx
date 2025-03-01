@@ -7,7 +7,7 @@ import FadeIn from '@/ui/animation/fadeIn';
 export default function Desktop(){
     return(
         <>
-        <section className="mt-[65px] px-8 mx-auto lg:max-w-[1300px] h-[calc(100%-60px)] flex justify-center item-center">
+        <section className="mt-[65px] px-8 mx-auto lg:max-w-[1300px] h-[calc(100%-60px)]  flex justify-center item-center">
             <div className="grid gap-3
                 lg:grid-cols-[_minmax(0,30%)_minmax(0,60%)_minmax(0,30%)]
             ">  
