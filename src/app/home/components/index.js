@@ -5,4 +5,5 @@ import HelloWorld from "./helloWorld";
 import Experience from "./experience";
 import Social from "./Social";
 import Education from "./education";
-export { Profile,AboutMe,TechStack,HelloWorld,Experience,Social,Education} ;
+import Projects from "./projects";
+export { Profile,AboutMe,TechStack,HelloWorld,Experience,Social,Education,Projects} ;

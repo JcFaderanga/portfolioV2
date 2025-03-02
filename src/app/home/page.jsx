@@ -31,6 +31,7 @@ useEffect(()=>{
         <div className=' md:hidden lg:hidden'><Mobile /></div>
 
         <div className={`hidden lg:flex w-full absolute bottom-0  box-shadow ${styles.slideDown} bg-white`}></div>
+        <div className='text-center py-4 border-t border-gray-200'>© 2025 JC Faderanga. All rights reserved.</div>
         </main>
     );
 }

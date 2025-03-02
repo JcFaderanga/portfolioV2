@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import { Profile,AboutMe,TechStack,HelloWorld,Experience,Social,Education } from '../../components';
+import { Profile,AboutMe,TechStack,HelloWorld,Experience,Social,Education,Projects } from '../../components';
 import { motion } from "framer-motion";
 import FadeUp from '@/ui/animation/fadeUp';
 import FadeIn from '@/ui/animation/fadeIn';
@@ -11,14 +11,6 @@ export default function Desktop(){
             <div className="grid gap-3
                 lg:grid-cols-[_minmax(0,30%)_minmax(0,60%)_minmax(0,30%)]
             ">  
-                {/* 1st col */}
-                {/* <div className=" bg-white py-2 
-                    lg:col-start-1 lg:row-start-1 lg:row-span-3 
-                ">
-                    <FadeUp delay={1.2}>
-                        <TechStack />
-                    </FadeUp>
-                </div> */}
                 {/* 2nd col */}
                 <div className="  py-2 
                     lg:col-start-1 lg:row-start-1 lg:row-span-2
@@ -58,7 +50,16 @@ export default function Desktop(){
                     </FadeIn>
                     
                 </div>
-            </div>
+            </div> 
+        </section>
+        <section>
+            <div className=" bg-white py-2 lg:max-w-[1300px] px-8 mx-auto relative">
+                <FadeUp delay={1.2}>
+                    <TechStack />
+                </FadeUp>
+                <Projects />
+            </div> 
+            
         </section>
 
         {/* <div className="box-shadow h-64 bg-white">xcv</div> */}
