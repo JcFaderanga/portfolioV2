@@ -14,9 +14,9 @@ const TechStack = () => {
     const tools = Icon.filter((tech)=>tech.category === "tools");
    
     return(
-        <div className="box-shadow rounded-xl flex py-8 px-4 ">
-            <div className="w-2xs hidden lg:flex h-2xs border border-gray-200 mx-4 rounded-xl"></div>
-            <div>
+        <div className=" rounded-xl flex py-8 px-4 ">
+            {/* <div className="w-2xs hidden lg:flex h-2xs border border-gray-200 mx-4 rounded-xl"></div> */}
+            <div className="">
                 <h1 className="text-3xl font-bold">Tech Stack</h1>
                 <div className="flex flex-wrap  ">
                     {/* FrontEnd Tech List*/}

@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import { Profile,AboutMe,TechStack,HelloWorld,Experience,Social,Education } from '../../components';
+import { Profile,AboutMe,TechStack,HelloWorld,Experience,Social,Education,TicTacToe } from '../../components';
 import FadeUp from '@/ui/animation/fadeUp';
 export default function Tablet(){
     return(
@@ -16,6 +16,7 @@ export default function Tablet(){
             {/* 3 */}
                 <div className=" bg-white py-2 "><FadeUp delay={.6} className="py-2" ><AboutMe/></FadeUp></div>
             {/* 4 */}
+            <TicTacToe/>
                 <div className=" bg-white py-2 "><Experience/></div>
             {/* 5 */}
                 <div className=" bg-white py-2 "><HelloWorld/></div> 
@@ -23,6 +24,7 @@ export default function Tablet(){
                 <div className=" bg-white py-2 "><Education/></div>
             {/* 7 */}
                 <div className=" bg-white py-2  "><TechStack /></div>
+               
             </div>
         </section>
     );

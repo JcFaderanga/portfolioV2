@@ -6,4 +6,6 @@ import Experience from "./experience";
 import Social from "./Social";
 import Education from "./education";
 import Projects from "./projects";
-export { Profile,AboutMe,TechStack,HelloWorld,Experience,Social,Education,Projects} ;
+import TicTacToe from "./tictactoe";
+import Resume from "./resume";
+export { Profile,AboutMe,TechStack,HelloWorld,Experience,Social,Education,Projects,TicTacToe, Resume}; 
