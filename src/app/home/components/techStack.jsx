@@ -1,45 +1,64 @@
-"use client"
-import React from "react";
+"use client";
+import React, { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
-import {aboutMe,skills } from "../../lib/data";
-import { Icon } from "@/ui/icons";
-
-
+import { skills } from "../../lib/data";
+import FadeIn from "@/ui/animation/fadeIn";
 const TechStack = () => {
+    const [selectedSkill, setSelectedSkill] = useState(skills || []);
+    const [filter, setFilter] = useState("All");
 
-    console.log(skills)
+    const techFilter = ["All", "Automation","Front end", "Back end", "Tools"];
 
-    const frontEnd = skills.filter((tech)=>tech.category === "frontend");
-    const backEnd = skills.filter((tech)=>tech.category === "backend");
-    const tools = skills.filter((tech)=>tech.category === "tools");
-   
-    const techFilter = ['All', 'Automation', 'Front end', 'Back end', 'Tools']
-    return(
-        <section className=" rounded-xl h-screen">
-            {/* <div className="w-2xs hidden lg:flex h-2xs border border-gray-200 mx-4 rounded-xl"></div> */}
+    const filterSkills = useCallback(() => {
+        if (filter === "Automation") return skills.filter((tech) => tech.category === "automation");
+        if (filter === "Front end") return skills.filter((tech) => tech.category === "frontend");
+        if (filter === "Back end") return skills.filter((tech) => tech.category === "backend");
+        if (filter === "Tools") return skills.filter((tech) => tech.category === "tools");
+        return skills;
+    }, [filter]);
+
+    useEffect(() => {
+        setSelectedSkill(filterSkills());
+    }, [filterSkills]);
+
+    return (
+        <section className="rounded-xl min-h-screen">
             <h1 className="text-3xl text-center font-bold">Tech Stack</h1>
-                <div className="flex items-center lg:justify-center overflow-x-scroll lg:border-b border-[#333333] mt-4 h-11 max-w-2xl w-full mx-auto">
-                    {techFilter.map((item, index)=>
-                        <span key={index} className="px-2 cursor-pointer text-nowrap  hover:font-bold">
-                            {item}
-                        </span>
-                    )}
-                </div>
 
-                    {skills.map((skill,index)=>{
-                             <div key={index} className="py-2 px-2 flex flex-col items-center">
-                                 <Image src={skill.image} width={32} height={32} alt={skill.name}></Image>
-                                 <h1>{skill.name}</h1>
-                             </div>
-                        })
-                    }
-           
+            {/* Filter Buttons */}
+            <div className="flex items-center justify-center overflow-x-auto whitespace-nowrap border-b border-gray-400 mt-4 h-11 max-w-2xl w-full mx-auto">
+                {techFilter.map((item, index) => (
+                    <button
+                        key={index}
+                        className={`px-3 py-1 mx-1 rounded-md transition-all cursor-pointer text-nowrap ${
+                            filter === item ? "font-bold" : "hover:bg-gray-200"
+                        }`}
+                        onClick={() => setFilter(item)}
+                    >
+                        {item}
+                    </button>
+                ))}
+            </div>
+
+            {/* Skill Cards */}
+            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-6 gap-3 mt-6">
+                {selectedSkill.map((skill, index) => (
+                    <FadeIn key={index} delay={index * .03}>
+                        <div  className="py-3 px-2 flex items-center justify-between border border-gray-400 rounded-lg  bg-white">
+                            <Image src={skill.image} width={32} height={32} alt={skill.name} />
+                            <div className="lg:flex items-center justify-between w-full flex-wrap px-1 text-sm">
+                                <h4>{skill.name}</h4>
+                                <strong className="text-gray-600">{skill.exp}</strong>
+                            </div>
+                        </div>
+                    </FadeIn>
+                ))}
+            </div>
         </section>
-    )
-}
+    );
+};
+
 export default TechStack;
-
-
 
 
 
