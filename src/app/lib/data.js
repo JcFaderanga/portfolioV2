@@ -80,7 +80,7 @@ export const skills = [
     { name: 'tailwind', image: '/assets/tailwindcss.png',exp: '2yrs Exp.', category: 'frontend' },
     { name: 'nextjs', image: '/assets/nextjs.png',exp: '3mos Exp.', category: 'frontend' },
     { name: 'vscode', image: '/assets/vscode.png',exp: '3yrs Exp.', category: 'tools' },
-    // { name: 'figma', image: '/assets/figma.png',exp: '2yrs Exp.', category: 'tools' },
+    { name: 'figma', image: '/assets/figma.png',exp: '2yrs Exp.', category: 'tools' },
     { name: 'canva', image: '/assets/canva.png',exp: '6mos Exp.', category: 'tools' },
     { name: 'expo', image: '/assets/expo.png',exp: '4mos Exp.', category: 'frontend' },
     { name: 'git', image: '/assets/git.png',exp: '2yrs Exp.', category: 'tools' },

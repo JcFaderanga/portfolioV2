@@ -7,7 +7,7 @@ const ExperienceBox = ({props}) => {
     return(
         <div className="my-2">
             <div className="absolute -left-[4px] w-2 h-2 bg-[#333333] rounded-full mt-2"></div>
-            <h1 className="font-bold text-lg ">{props.position}</h1>
+            <h1 className="font-bold ">{props.position}</h1>
             <h3 className="">{props.company}</h3>
             <h3>{props.date}</h3>
             <li className="!text-sm py-2">{props.description}</li>
@@ -16,7 +16,7 @@ const ExperienceBox = ({props}) => {
 };
 const Experience = () => {
     return(
-        <div className="border border-gray-300 py-4 px-6 rounded-xl bg-white">
+        <div className="border border-gray-300 py-4 px-6 rounded-xl bg-white hover:bg-slate-50">
             <div className="flex items-center">
                 <BriefcaseBusiness />
                 <h1 className="text-xl font-bold px-2">Experience</h1>

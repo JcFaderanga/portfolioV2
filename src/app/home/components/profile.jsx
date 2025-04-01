@@ -8,7 +8,8 @@ const Profile = () => {
     return(
         <div className="border border-gray-300 py-7 flex flex-col items-center justify-center rounded-xl bg-white
             md:p-4 md:flex-row md:justify-start
-            lg:p-6 lg:flex-wrap
+            lg:p-6 lg:flex-wrap 
+          hover:bg-slate-50
         ">
             <Image src="/profile.png" width={120} height={120} sizes="(max-width: 768px) 100vw, 33vw" className="rounded-3xl lg:mx-auto" alt="profile"></Image>
             <div className=" flex flex-col items-center justify-center mx-4 md:block lg:mx-auto ">

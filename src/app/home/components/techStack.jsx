@@ -22,11 +22,11 @@ const TechStack = () => {
     }, [filterSkills]);
 
     return (
-        <section className="rounded-xl min-h-screen">
+        <section className="rounded-xl my-10 min-h-[400px]">
             <h1 className="text-3xl text-center font-bold">Tech Stack</h1>
 
             {/* Filter Buttons */}
-            <div className="flex items-center justify-center overflow-x-auto whitespace-nowrap border-b border-gray-400 mt-4 h-11 max-w-2xl w-full mx-auto">
+            <div className="lg:flex items-center justify-center overflow-x-auto whitespace-nowrap border-b border-gray-400 mt-4 h-11 max-w-2xl w-full mx-auto">
                 {techFilter.map((item, index) => (
                     <button
                         key={index}
@@ -44,7 +44,7 @@ const TechStack = () => {
             <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-6 gap-3 mt-6">
                 {selectedSkill.map((skill, index) => (
                     <FadeIn key={index} delay={index * .03}>
-                        <div  className="py-3 px-2 flex items-center justify-between border border-gray-400 rounded-lg  bg-white">
+                        <div  className="h-16 px-2 flex items-center justify-between border border-slate-300 rounded-lg  bg-slate-50">
                             <Image src={skill.image} width={32} height={32} alt={skill.name} />
                             <div className="lg:flex items-center justify-between w-full flex-wrap px-1 text-sm">
                                 <h4>{skill.name}</h4>

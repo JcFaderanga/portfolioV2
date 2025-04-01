@@ -21,9 +21,9 @@ const Social = () => {
                 <a href={socialMedia.facebook} className="px-2 hover:scale-125" target="_blank">
                     <Image src={'/assets/facebook-colored.png'} width={35} height={35} alt="facebook"></Image>
                 </a>
-                <a href={socialMedia.github} className="px-2 hover:scale-125" target="_blank">
+                {/* <a href={socialMedia.github} className="px-2 hover:scale-125" target="_blank">
                     <Image src={'/assets/github.png'} width={35} height={35} alt="github"></Image>
-                </a>
+                </a> */}
             </div>
         </div>
     )
