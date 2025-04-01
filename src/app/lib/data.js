@@ -55,17 +55,38 @@ export const education = [
 export const workExperience = [
     {
         company: 'Muntinlupa City Police Station',
-        date: 'February - Present',
+        date: 'February 2025 - May 2025',
         position: 'Internship - Tech/IT Support',
+        description: "Provided IT support for technical-related complaints, assisting with troubleshooting, system maintenance, and network management. "
     },
     {
         company: 'Teleperformance',
         date: 'September 2023 - January 2024',
         position: 'Customer Service Representative',
+        description: "Managed inbound calls on a health care account, addressing a wide range of customer inquiries including billing, account maintenance, general support, claim and benefits.  "
     },
 ]
+export const skills = [
+    { name: 'html', image: '/assets/html.png', category: 'frontend' },
+    { name: 'css', image: '/assets/css.png', category: 'frontend' },
+    { name: 'javascript', image: '/assets/javascript.png', category: 'frontend' },
+    { name: 'react', image: '/assets/react.png', category: 'frontend' },
+    { name: 'node', image: '/assets/nodejs.png', category: 'backend' },
+    // { name: 'express', image: '/assets/express.png', category: 'backend' },
+    { name: 'mongo', image: '/assets/mongodb.png', category: 'backend' },
+    { name: 'mysql', image: '/assets/mysql.png', category: 'backend' },
+    { name: 'postgres', image: '/assets/postgresql.png', category: 'backend' },
+    { name: 'typescript', image: '/assets/typescript.png', category: 'frontend' },
+    { name: 'tailwind', image: '/assets/tailwindcss.png', category: 'frontend' },
+    { name: 'nextjs', image: '/assets/nextjs.png', category: 'frontend' },
+    { name: 'vscode', image: '/assets/vscode.png', category: 'tools' },
+    { name: 'figma', image: '/assets/figma.png', category: 'tools' },
+    { name: 'canva', image: '/assets/canva.png', category: 'tools' },
+    { name: 'expo', image: '/assets/expo.png', category: 'frontend' },
+    { name: 'git', image: '/assets/git.png', category: 'tools' },
+    { name: 'trello', image: '/assets/trello.png', category: 'tools' },
+];
 
-export const skills = {}
 export const projects = [{ }]
 export const interests = [{  }]
 export const languages = [ {  } ]

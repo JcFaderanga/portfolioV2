@@ -6,7 +6,7 @@ import { personalInfo,position } from "../../lib/data";
 import { MapPin,Mail,Phone } from 'lucide-react';
 const Profile = () => {
     return(
-        <div className="box-shadow py-7 flex flex-col items-center justify-center rounded-md bg-white
+        <div className="border border-gray-300 py-7 flex flex-col items-center justify-center rounded-xl bg-white
             md:p-4 md:flex-row md:justify-start
             lg:p-6 lg:flex-wrap
         ">

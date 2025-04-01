@@ -1,4 +1,5 @@
 import { poppins } from "../ui/fonts";
+import { ThemeProvider } from "@/context/themeContext";
 import "./globals.css";
 
 
@@ -12,9 +13,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-     <body className={`${poppins.className} antialiased`}>
-        {children}
-      </body>        
+        <body className={`${poppins.className} antialiased`}>
+            <ThemeProvider>
+                {children}
+            </ThemeProvider>
+        </body>        
     </html>
   );
 }

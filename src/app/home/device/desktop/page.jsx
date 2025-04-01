@@ -22,55 +22,33 @@ export default function Desktop() {
         <>
             {/* Main Section */}
             <section className="mt-[65px] px-8 mx-auto lg:max-w-[1300px] h-[calc(100vh-60px)] flex justify-center">
-                <div className="grid gap-3 lg:grid-cols-[_minmax(0,30%)_minmax(0,60%)_minmax(0,30%)]">
+                <div className="grid gap-3 lg:grid-cols-[_minmax(0,60%)_minmax(0,40%)]">
                     
                     {/* First Column */}
                     <div className="py-2 lg:col-start-1 lg:row-start-1 lg:row-span-2">
-                        <FadeUp delay={0.6}>
-                            <AboutMe />
-                        </FadeUp>
-                        <FadeIn delay={1.6} className="mt-3">
-                            <Social />
-                        </FadeIn>
-                        <FadeUp delay={1.8}>
-                        <TicTacToe/>
-                        </FadeUp>
+                        <FadeUp delay={0.6}><AboutMe /></FadeUp>
+                        <div className="flex">
+                            <FadeIn delay={1.4} className="my-3 max-w-[410px]"><HelloWorld /></FadeIn>
+                            <FadeIn delay={1.6} className="mt-3"><Social /></FadeIn>
+                        </div>
+                        <FadeUp delay={0.8}><Experience /></FadeUp>
                         
                     </div>
                     
                     {/* Second Column */}
                     <div className="py-2 lg:col-start-2">
-                        <FadeUp delay={0.4}>
-                            <Profile />
-                        </FadeUp>
-                        <FadeUp delay={0.9} className="mt-3">
-                            <Education />
-                        </FadeUp>
+                        <FadeUp delay={0.4}><Profile /></FadeUp>
+                        <FadeUp delay={0.9} className="mt-3"><Education /></FadeUp>
                     </div>
                     
-                    {/* Third Column */}
-                    <div className="py-2 lg:col-start-3">
-                        <FadeUp delay={0.8}>
-                            <Experience />
-                        </FadeUp>
-                        <FadeIn delay={1.4} className="mt-5">
-                            <HelloWorld />
-                        </FadeIn>
-                        <FadeIn delay={1.6} className="mt-5">
-                            <Resume/>
-                        </FadeIn>
-                        
-                    </div>
+                
                 </div>
             </section>
             
             {/* Secondary Section */}
             <section>
                 <div className="bg-white py-2 lg:max-w-[1300px] px-8 mx-auto relative">
-                    <FadeUp delay={1.2}>
-                        <TechStack />
-                    </FadeUp>
-                    <Projects />
+                    <FadeUp delay={1.2}><TechStack /></FadeUp><Projects />
                 </div>
                 
             </section>
