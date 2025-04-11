@@ -30,7 +30,7 @@ export default function Home() {
               className={`${visible ? `text-lg text-center text-shadow py-1 leading-10`: `hidden`}`}
             >
              <span className="text-xl font-normal">a</span> <span className="font-semibold text-3xl">
-              Software Tester <span className="text-xl font-normal">and</span>  Front End Developer 
+              Software Tester <span className="text-xl font-normal">and</span>  Web Developer 
             </span>
             </p>
             <h2 className={`${visible ? `text-4xl font-normal text-center text-shadow` : `hidden`}`}> <span className="text-xl font-normal">From</span>  Philippines</h2>
