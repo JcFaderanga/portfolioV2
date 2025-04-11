@@ -7,10 +7,10 @@ const TechStack = () => {
     const [selectedSkill, setSelectedSkill] = useState(skills || []);
     const [filter, setFilter] = useState("All");
 
-    const techFilter = ["All", "Automation","Front end", "Back end", "Tools"];
-
+    // const techFilter = ["All", "Automation","Front end", "Back end", "Tools"];
+    const techFilter = ["All","Front end", "Back end", "Tools"];
     const filterSkills = useCallback(() => {
-        if (filter === "Automation") return skills.filter((tech) => tech.category === "automation");
+        // if (filter === "Automation") return skills.filter((tech) => tech.category === "automation");
         if (filter === "Front end") return skills.filter((tech) => tech.category === "frontend");
         if (filter === "Back end") return skills.filter((tech) => tech.category === "backend");
         if (filter === "Tools") return skills.filter((tech) => tech.category === "tools");
