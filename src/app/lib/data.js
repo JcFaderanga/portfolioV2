@@ -1,5 +1,5 @@
 
-export const position = 'Front End Developer';
+export const position = 'Web Developer';
 export const aboutMe = "Hi, I'm Jc Faderanga a web developer and software tester currently studying Bachelor of Science in Information Technology at Pamantasan ng Lungsod ng Muntinlupa. I’m really passionate about coding and enjoy the process of building and learning through it. For me, programming is not just about codes, it's about life.";
 export const helloWorld = "Wrote my first line of code, marking the start of my journey, experience, and passion as a developer.";
 export const personalInfo = {
@@ -87,7 +87,78 @@ export const skills = [
     { name: 'trello', image: '/assets/trello.png',exp: '3yrs Exp.', category: 'tools' },
 ];
 
-export const projects = [{ }]
+export const projects = [
+    {
+        title: 'Personal Finance/Social Management',
+        projectType: 'Personal Project',
+        description:
+          '"A personal management web app that helps users stay organized by tracking expenses, managing bills, and securely storing important account information for easy access."',
+        image: '/assets/under_construction_transparent.png',
+        tech: [
+            'TypeScript',
+            'Vite',
+            'React.js',
+            'TailwindCSS',
+            'Node.js',
+            'Express.js',
+            'PostgreSQL',
+            'Supabase',
+            'Zustand',
+            'Netlify',
+        ],
+        demoLink: 'https://jcfaderanga.vercel.app',
+        complete: false,
+    },
+    {
+        title: 'My Portfolio',
+        projectType: 'Personal Project',
+        description:
+            '"A personal portfolio website showcasing my skills, projects, and experiences as a Web developer. Designed with a clean, responsive layout, it highlights my work in React, JavaScript, TypeScript, and modern web technologies to demonstrate my passion for building user-friendly and efficient web applications."',
+        image: '/assets/portfolio.png',
+        tech: [
+            'Next.js',
+            'TailwindCSS',
+            'JavaScript',
+            'Vercel',
+        ],
+        demoLink: 'https://jcfaderanga.vercel.app',
+        complete: true,
+    },
+    {
+        title: 'BloodLink: Mobile Hybrid Blood Bank System',
+        projectType: 'Capstone Project',
+        description:
+            '"A mobile-based hybrid application designed to streamline blood donation management. The system features user registration, health pre-screening, appointment scheduling, real-time inventory updates, and educational resources to enhance donor engagement and optimize blood bank operations."',
+        image: '/assets/bloodLink.png',
+        tech: [
+            'JavaScript',
+            'Node.js',
+            'React Native',
+            'TailwindCSS',
+            'Expo',
+            'PostgreSQL',
+            'Supabase',
+        ],
+        demoLink: '',
+        complete: true,
+    },
+    {
+        title: 'JAVA HUB Landing Page',
+        projectType: 'School Project',
+        description:
+          '"A coffee shop landing page created for a school activity to showcase my basic web development skills. It features a clean layout and cozy design. The site is not responsive, as the focus was on layout and design implementation."',
+        image: '/assets/javaHub.png',
+        tech: [
+            'HTML',
+            'CSS',
+            'JavaScript',
+            'GitHubPages',
+        ],
+        demoLink: 'https://jcfaderanga.github.io/WebTech-landing-page/',
+        complete: true,
+      },
+
+  ];
 export const interests = [{  }]
 export const languages = [ {  } ]
 export const certifications = [ {  } ] 

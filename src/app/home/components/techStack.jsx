@@ -22,7 +22,7 @@ const TechStack = () => {
     }, [filterSkills]);
 
     return (
-        <section className="rounded-xl my-10 min-h-[400px]">
+        <section className="rounded-xl my-10 lg:my-16 min-h-[400px] ">
             <h1 className="text-3xl text-center font-bold">Tech Stack</h1>
 
             {/* Filter Buttons */}

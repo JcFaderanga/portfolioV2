@@ -22,8 +22,7 @@ export default function Tablet(){
                 <div className=" bg-white py-2 "><HelloWorld/></div> 
             {/* 6 */}
                 <div className=" bg-white py-2 "><Education/></div>
-            {/* 7 */}
-                <div className=" bg-white py-2  "><TechStack /></div>
+           
                
             </div>
         </section>

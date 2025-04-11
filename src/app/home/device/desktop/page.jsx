@@ -46,12 +46,7 @@ export default function Desktop() {
             </section>
             
             {/* Secondary Section */}
-            <section>
-                <div className="py-2 lg:max-w-[1300px] px-8 mx-auto relative">
-                    <FadeUp delay={1.2}><TechStack /></FadeUp><Projects />
-                </div>
-                
-            </section>
+      
         </>
     );
 }
