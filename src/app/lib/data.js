@@ -1,6 +1,6 @@
 
 export const position = 'Front End Developer';
-export const aboutMe = "Hello, my name is Jc Faderanga and I am an aspiring web developer and software engineer. I am currently a student of Information Technology at Pamantasan ng Lunsod ng Muntinlupa. I am passionate about coding and find it fun and especially enjoyable. For me, programming is not just about codes, it's about life.";
+export const aboutMe = "Hi, I'm Jc Faderanga a web developer and software tester currently studying Bachelor of Science in Information Technology at Pamantasan ng Lungsod ng Muntinlupa. I’m really passionate about coding and enjoy the process of building and learning through it. For me, programming is not just about codes, it's about life.";
 export const helloWorld = "Wrote my first line of code, marking the start of my journey, experience, and passion as a developer.";
 export const personalInfo = {
     first_name: 'JC',
