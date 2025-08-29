@@ -89,7 +89,7 @@ export const skills = [
 
 export const projects = [
     {
-        title: 'Personal Finance/Social Management',
+        title: 'I Track Money | Expenses Management',
         projectType: 'Personal Project',
         description:
           '"A personal management web app that helps users stay organized by tracking expenses, managing bills, and securely storing important account information for easy access."',
@@ -101,14 +101,14 @@ export const projects = [
             'REST API', 
             'TailwindCSS',
             'Node.js',
-            'Express.js',
-            'PostgreSQL',
-            'Supabase',
             'Zustand',
-            'Netlify',
+            'Jira',
+            'Supabase',
+            'Vercel',
+            'Postman',
         ],
-        demoLink: 'https://jcfaderanga.vercel.app',
-        complete: false,
+        demoLink: 'https://itrackmoney.vercel.app',
+        complete: true,
     },
     {
         title: 'My Portfolio',
