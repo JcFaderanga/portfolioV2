@@ -11,7 +11,7 @@ const Profile = () => {
             lg:p-6 lg:flex-wrap 
           hover:bg-slate-50
         ">
-            <Image src="/profile.jpg" width={120} height={120} sizes="(max-width: 768px) 100vw, 33vw" className="rounded-3xl lg:mx-auto" alt="profile"></Image>
+            <Image src="/profile.png" width={120} height={120} sizes="(max-width: 768px) 100vw, 33vw" className="rounded-3xl lg:mx-auto" alt="profile"></Image>
             <div className=" flex flex-col items-center justify-center mx-4 md:block lg:mx-auto ">
                 <h1 className="text-[26px] font-bold">{position}</h1>
                 <h1 className="text-base flex"><MapPin size={20} className="mr-1"/>{personalInfo.address}</h1>
