@@ -17,17 +17,24 @@ const Header = () => {
     },[isShadow])
 
   return (
-    <header className={` lg:flex w-full  h-[60px] absolute top-0 bg-white ${isShadow && 'lg:shadow-lg'} ${styles.slideUp} `}>
-        <FadeIn delay={1} className="w-full  mx-auto px-2 md:px-8 h-full flex items-center justify-center">
-            <a href={socialMedia.github} className="px-2 hover:scale-125 hidden" target="_blank">
+    <header className={` lg:flex w-full h-[60px] z-9999 bg-white px-4 fixed top-0 ${isShadow && 'lg:shadow-lg'} ${styles.slideUp} `}>
+        <FadeIn delay={1} className="w-full  mx-auto h-full flex items-center justify-center lg:justify-between">
+            <a href={socialMedia.github} className=" hover:scale-125 hidden" target="_blank">
                 <Image src={'/assets/github.png'} width={35} height={35} alt="github"></Image>
             </a>
             <Link href="/" >
                 <h1 className={` text-2xl font-bold`}>{`${personalInfo.first_name} ${personalInfo.last_name}`}</h1>
             </Link>
-            <div className='hidden'>
-            <ToggleButton/>
-            </div>
+        
+              <ul className='hidden lg:flex gap-5 font-bold'>
+                <li className='cursor-pointer'>Home</li>
+                <li className='cursor-pointer'>About Me</li>
+                <li className='cursor-pointer'>Tech Stack</li>
+                <li className='cursor-pointer'>Project</li>
+                <li className='cursor-pointer'>Contact</li>
+              </ul>
+            {/* <ToggleButton/> */}
+         
             
         </FadeIn>
     </header>

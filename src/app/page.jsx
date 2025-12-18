@@ -18,7 +18,7 @@ export default function Home() {
   
 
   return (
-    <main className={`w-full h-screen flex items-center justify-center bg-[url('/bg-light-wool.png')] bg-repeat `} >
+    <main className={`w-full h-screen bg-white flex items-center justify-center bg-[url('/bg-light-wool.png')] bg-repeat `} >
         <div className={`hidden lg:flex w-full h-[20%] absolute top-0  shadow-lg ${style.slide} bg-white`}></div>
           <div className={`${visible && style.popIn}`}>
             <h1 

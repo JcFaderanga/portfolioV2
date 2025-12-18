@@ -1,5 +1,6 @@
 
-export const position = 'Web Developer';
+export const position = 'Software Tester';
+export const shortDescription =  "Hi, I'm Jc Faderanga, Passionate Software Tester dedicated to ensuring quality and seamless user experiences. Skilled in manual testing and bug tracking. I love finding and fixing issues to make software better."
 export const aboutMe = "Hi, I'm Jc Faderanga a web developer and software tester currently studying Bachelor of Science in Information Technology at Pamantasan ng Lungsod ng Muntinlupa. I’m really passionate about coding and enjoy the process of building and learning through it. For me, programming is not just about codes, it's about life.";
 export const helloWorld = "Wrote my first line of code, marking the start of my journey, experience, and passion as a developer.";
 export const personalInfo = {
@@ -8,7 +9,7 @@ export const personalInfo = {
     birth_date: '01-21-2003',
     email: 'jcfaderanga@gmail.com',
     number: '09911445131',
-    address: 'Muntinlupa City, Philippines',
+    address: 'Muntinlupa City, NCR, Philippines',
 }
 
 export const socialMedia = {
@@ -16,7 +17,7 @@ export const socialMedia = {
     linkedin: 'https://www.linkedin.com/in/janrey-cyril-faderanga-692190280/',
     twitter: 'https://twitter.com/JcFaderanga',
     instagram: 'https://www.instagram.com/jeysi_faderanga/',
-    facebook: 'https://www.facebook.com/janreycyril.faderanga/',
+    facebook: 'https://www.facebook.com/jeysifaderanga/',
 }
 
 export const education = [
@@ -54,16 +55,29 @@ export const education = [
 
 export const workExperience = [
     {
+        company: 'TP',
+        date: 'Sept. 2025 - Dec. 2025',
+        position: 'Fraud Analyst',
+        description: [
+            "Monitored real-time queues to detect and flag high-risk transactions within the business portfolio.",
+            "Observed customer transactions to identify potential fraudulent activities, including account takeovers, friendly fraud, theft, and other security risks.",
+            "Investigated and confirmed fraudulent transactions using established protocols and fraud detection and tracking tools."
+        ]
+    },
+    {
         company: 'Muntinlupa City Police Station',
-        date: 'February 2025 - May 2025',
+        date: 'Feb.2025 - May 2025',
         position: 'Internship - Tech/IT Support',
-        description: "Provided IT support for technical-related complaints, assisting with troubleshooting, system maintenance, and network management. "
+        description: [
+            "Monitored local network performance and resolved basic internet and printer issues.",
+            "Supported system maintenance, network management, and hardware/software troubleshooting."
+        ]
     },
     {
         company: 'Teleperformance',
-        date: 'September 2023 - January 2024',
-        position: 'Customer Service Representative',
-        description: "Managed inbound calls on a health care account, addressing a wide range of customer inquiries including billing, account maintenance, general support, claim and benefits.  "
+        date: 'Sept. 2023 - Jan. 2024',
+        position: 'CSR & Learning Coach',
+        description: ["Managed inbound calls on a health care account, addressing a wide range of customer inquiries including billing, account maintenance, general support, claim and benefits."]
     },
 ]
 export const skills = [

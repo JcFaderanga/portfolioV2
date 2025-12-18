@@ -5,7 +5,7 @@ import {education } from "../../lib/data";
 import { BookOpen } from 'lucide-react';
 const Education = () => {
     return(
-        <div className=" pt-6 pb-3 border bg-white border-gray-300 rounded-xl px-4 hover:bg-slate-50">
+        <div className=" pt-6 pb-3 bg-white border-gray-300 rounded-xl px-4 hover:bg-slate-50">
             <div className="flex items-center py-2">
                 <BookOpen />
                 <h1 className="text-xl font-bold px-2">Education</h1>

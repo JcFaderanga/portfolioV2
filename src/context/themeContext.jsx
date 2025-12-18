@@ -14,7 +14,9 @@ export const ThemeProvider = ({children}) => {
 
   return (
     <ThemeContext.Provider value={{ toggleTheme, theme}}>
+      <div className='gradient-color '>
         {children}
+      </div>
     </ThemeContext.Provider>
   )
 }

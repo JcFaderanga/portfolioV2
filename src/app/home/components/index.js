@@ -8,4 +8,5 @@ import Education from "./education";
 import Projects from "./projects";
 import TicTacToe from "./tictactoe";
 import Resume from "./resume";
-export { Profile,AboutMe,TechStack,HelloWorld,Experience,Social,Education,Projects,TicTacToe, Resume}; 
+import Contact from "./contact";
+export { Profile,AboutMe,TechStack,HelloWorld,Experience,Social,Education,Projects,TicTacToe, Resume, Contact}; 

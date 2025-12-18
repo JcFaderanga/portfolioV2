@@ -22,37 +22,39 @@ const TechStack = () => {
     }, [filterSkills]);
 
     return (
-        <section className="rounded-xl my-10 lg:my-16 min-h-[400px] ">
+        <section className="gradient-color-v3 flex flex-col py-10 justify-center lg:h-[700px] ">
             <h1 className="text-3xl text-center font-bold">Tech Stack</h1>
 
-            {/* Filter Buttons */}
-            <div className="lg:flex items-center justify-center overflow-x-auto whitespace-nowrap border-b border-gray-400 mt-4 h-11 max-w-2xl w-full mx-auto">
-                {techFilter.map((item, index) => (
-                    <button
-                        key={index}
-                        className={`px-3 py-1 mx-1 rounded-md transition-all cursor-pointer text-nowrap ${
-                            filter === item ? "font-bold" : "hover:bg-gray-200"
-                        }`}
-                        onClick={() => setFilter(item)}
-                    >
-                        {item}
-                    </button>
-                ))}
-            </div>
+            <div className="max-w-[1600px] mx-auto">
+                {/* Filter Buttons */}
+                <div className="lg:flex items-center justify-center overflow-x-auto whitespace-nowrap border-b border-gray-400 mt-4 h-11 max-w-2xl w-full mx-auto">
+                    {techFilter.map((item, index) => (
+                        <button
+                            key={index}
+                            className={`px-3 py-1 mx-1 rounded-md transition-all cursor-pointer text-nowrap ${
+                                filter === item ? "font-bold" : "hover:bg-gray-200"
+                            }`}
+                            onClick={() => setFilter(item)}
+                        >
+                            {item}
+                        </button>
+                    ))}
+                </div>
 
-            {/* Skill Cards */}
-            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-6 gap-3 mt-6">
-                {selectedSkill.map((skill, index) => (
-                    <FadeIn key={index} delay={index * .03}>
-                        <div  className="h-16 px-2 flex items-center justify-between border border-slate-300 rounded-lg  bg-slate-50">
-                            <Image src={skill.image} width={32} height={32} alt={skill.name} />
-                            <div className="lg:flex items-center justify-between w-full flex-wrap px-1 text-sm">
-                                <h4>{skill.name}</h4>
-                                <strong className="text-gray-600">{skill.exp}</strong>
+                {/* Skill Cards */}
+                <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-6 gap-3 mt-6">
+                    {selectedSkill.map((skill, index) => (
+                        <FadeIn key={index} delay={index * .03}>
+                            <div  className="h-16 px-2 flex items-center justify-between border border-slate-300 rounded-lg  bg-slate-50">
+                                <Image src={skill.image} width={32} height={32} alt={skill.name} />
+                                <div className="lg:flex items-center justify-between w-full flex-wrap px-1 text-sm">
+                                    <h4>{skill.name}</h4>
+                                    <strong className="text-gray-600">{skill.exp}</strong>
+                                </div>
                             </div>
-                        </div>
-                    </FadeIn>
-                ))}
+                        </FadeIn>
+                    ))}
+                </div>
             </div>
         </section>
     );

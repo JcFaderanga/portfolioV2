@@ -15,7 +15,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
         <body className={`${poppins.className} antialiased`}>
             <ThemeProvider>
-                {children}
+                <div className=' w-full mx-auto relative'>
+                  {children}
+                </div>       
             </ThemeProvider>
         </body>        
     </html>

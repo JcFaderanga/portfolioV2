@@ -53,7 +53,7 @@ const ProjectCard = ({ props, index }) => {
 
 const Projects = () => {
   return (
-    <div className='w-full'>
+    <div className='max-w-[1600px] mx-auto py-10 px-4'>
       <h1 className='text-3xl text-center font-bold'>My Projects</h1>
       {projects.map((project, index) => (
         <ProjectCard key={project.title} props={project} index={index} />

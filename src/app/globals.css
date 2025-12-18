@@ -3,6 +3,31 @@
 *{
   color: #333333;
 }
+.gradient-color {
+  background: linear-gradient(135deg, #dbeafe, #e0e7ff 20%, #fff 100%, #f5f3ff);
+}
+.gradient-color-v2 {
+  background: linear-gradient(135deg, #dbeafe, #e0e7ff 20%, #f5f3ff);
+}
+
+.gradient-color-v3 {
+  background: linear-gradient(
+    to right,
+    #DBEAFE 0%,
+    #F5F3FF 25%,
+    #FFFFFF 51%,
+    #F5F3FF 78%,
+    #DBEAFE 99%
+  );
+}
+.gradient-color-v4 {
+  background: linear-gradient(
+    to bottom,
+    #FFFFFF 0%,
+    #F5F3FF 68%,
+    #DBEAFE 100%
+  );
+}
 .box-shadow {
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
