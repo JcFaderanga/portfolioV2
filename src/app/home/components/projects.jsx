@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { ExternalLink, Frown,Wrench  } from 'lucide-react';
 import { projects } from '@/app/lib/data';
-
+import FadeInSection from '@/ui/animation/fadeOnScroll';
 const ProjectCard = ({ props, index }) => {
   const isEven = index % 2 === 0;
 
   return (
+    <FadeInSection>
     <div
       className={`my-14 flex flex-col gap-10 items-center lg:flex-row ${
         isEven ? '' : 'lg:flex-row-reverse'
@@ -48,17 +49,19 @@ const ProjectCard = ({ props, index }) => {
         )}
       </div>
     </div>
+    </FadeInSection>
   );
 };
 
 const Projects = () => {
   return (
-    <div className='max-w-[1600px] mx-auto py-10 px-4'>
+    <section id='projects' className='max-w-[1600px] mx-auto py-14 px-4 '>
       <h1 className='text-3xl text-center font-bold'>My Projects</h1>
       {projects.map((project, index) => (
+        
         <ProjectCard key={project.title} props={project} index={index} />
       ))}
-    </div>
+    </section>
   );
 };
 

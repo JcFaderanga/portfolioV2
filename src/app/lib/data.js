@@ -103,6 +103,18 @@ export const skills = [
 
 export const projects = [
     {
+        title: 'Auto Analyst',
+        projectType: 'Business Related Project',
+        description:
+          '"Auto Analyst streamlines transaction review by automating tasks based on client guidelines, reducing manual work and speeding up analysis. It lowers average case-handling time from 3 minutes to 1 while maintaining 98% accuracy, boosting efficiency and ensuring consistent, reliable results."',
+        image: '/assets/under_construction_transparent.png',
+        tech: [
+           'JavaScript'
+        ],
+        demoLink: '',
+        complete: true,
+    },
+    {
         title: 'I Track Money | Expenses Management',
         projectType: 'Personal Project',
         description:

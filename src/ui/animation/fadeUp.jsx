@@ -8,6 +8,7 @@ const FadeUp = ({delay, className, children}) => {
             initial={{ opacity: 0, y: 20 }}  // Starts invisible and slightly below
             animate={{ opacity: 1, y: 0 }}  // Fades in and moves up
             transition={{ duration: .4, delay: delay, ease: "easeOut" }} // 0.5s delay before animation starts
+            viewport={{ once: true, amount: 0.2 }}
             className={className}
         >
             {children}

@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import {workExperience } from "../../lib/data";
 import { BriefcaseBusiness } from 'lucide-react';
+import FadeInSection from "@/ui/animation/fadeOnScroll";
 const ExperienceBox = ({props}) => {
     return(
         <div className="my-4 hover:bg-slate-100 rounded-2xl p-2">
@@ -27,7 +28,7 @@ const Experience = () => {
             </div>
             <div className="border-l px-4 relative">
                 {workExperience.map((work, index) => {
-                    return <ExperienceBox props={work} key={index}/>
+                    return <FadeInSection key={index}><ExperienceBox props={work} /></FadeInSection>
                     }   
                 )}
             </div>

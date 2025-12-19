@@ -3,6 +3,8 @@ import React, { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import { skills } from "../../lib/data";
 import FadeIn from "@/ui/animation/fadeIn";
+import FadeUp from "@/ui/animation/fadeUp";
+import FadeInSection from "@/ui/animation/fadeOnScroll";
 const TechStack = () => {
     const [selectedSkill, setSelectedSkill] = useState(skills || []);
     const [filter, setFilter] = useState("All");
@@ -22,7 +24,8 @@ const TechStack = () => {
     }, [filterSkills]);
 
     return (
-        <section className="gradient-color-v3 flex flex-col py-10 justify-center lg:h-[700px] ">
+        <section id="tech" className="gradient-color-v3 flex flex-col py-10 px-4 justify-center lg:h-[700px] ">
+            <FadeInSection>
             <h1 className="text-3xl text-center font-bold">Tech Stack</h1>
 
             <div className="max-w-[1600px] mx-auto">
@@ -45,17 +48,18 @@ const TechStack = () => {
                 <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-6 gap-3 mt-6">
                     {selectedSkill.map((skill, index) => (
                         <FadeIn key={index} delay={index * .03}>
-                            <div  className="h-16 px-2 flex items-center justify-between border border-slate-300 rounded-lg  bg-slate-50">
-                                <Image src={skill.image} width={32} height={32} alt={skill.name} />
-                                <div className="lg:flex items-center justify-between w-full flex-wrap px-1 text-sm">
-                                    <h4>{skill.name}</h4>
-                                    <strong className="text-gray-600">{skill.exp}</strong>
+                            <div  className="h-16 px-4 flex items-center justify-between border border-slate-300 rounded-lg  bg-slate-50">
+                                <strong>{skill.name}</strong>
+                                <div className="">
+                                    
+                                    <Image src={skill.image} width={32} height={32} alt={skill.name} />
                                 </div>
                             </div>
                         </FadeIn>
                     ))}
                 </div>
             </div>
+            </FadeInSection>
         </section>
     );
 };
