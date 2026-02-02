@@ -3,10 +3,11 @@ import React from "react";
 import Image from "next/image";
 import { useState } from "react";
 import { Social, Resume } from ".";
-import { personalInfo,position, shortDescription } from "../../lib/data";
-import { MapPin,Mail,Phone } from 'lucide-react';
-import FadeInSection from "@/ui/animation/fadeOnScroll";
+import { personalInfo,position } from "../../lib/data";
+import { ArrowRight   } from 'lucide-react';
 import FadeUp from "@/ui/animation/fadeUp";
+import Link from "next/link";
+
 import FadeIn from "@/ui/animation/fadeIn";
 const Profile = () => {
   const [src, setSrc] = useState("/confident_profile.png");
@@ -39,20 +40,25 @@ const Profile = () => {
             <Resume />
           </FadeUp>
         </div>
-        <div className="md:pb-16">
-          <FadeUp delay={1.1}>
-            <span className="text-sm flex items-center">
-              <MapPin size={20} className="mr-1" />
-              {personalInfo.address}
-            </span>
-          </FadeUp>
-          <FadeUp delay={1.2}>
-            <span className="text-sm flex items-center mt-1">
-                <Mail size={20} className="mr-1" />
-                {personalInfo.email}
-            </span>
-          </FadeUp>
-        </div>
+        
+          <div className="lg:w-1/2">
+          <Link href='/project'>
+            <FadeUp delay={1}>
+              <div className="w-full hover:scale-105 my-4 lg:my-0 cursor-pointer flex gap-2 md:gap-2 items-center h-[133px] 
+                bg-[linear-gradient(to_right,#E0F7FF_0%,#FFFFFF_0%,#F5F3FF_50%,#DBEAFE_100%)]
+                hover:bg-[linear-gradient(to_left,#E0F7FF_0%,#FFFFFF_0%,#F5F3FF_50%,#DBEAFE_100%)]
+                rounded-lg px-4 py-2 bg-white">
+                <div className="w-full flex justify-between items-center my-4">
+                  <div>
+                    <h1 className="text-xl font-bold">Sample Work</h1>
+                    <h1 className="text-sm lg:text-sm mb-2">Sample test cases using excel and jira.</h1>
+                  </div>
+                    <ArrowRight className="cursor-pointer"/>
+                </div>
+              </div>
+            </FadeUp>
+            </Link>
+          </div>
       </div>
     </section>
 
