@@ -55,6 +55,14 @@ export const education = [
 
 export const workExperience = [
     {
+        company: 'AMSG88 IT SOLUTIONS OPC',
+        date: 'Mar. 2026 - Present',
+        position: 'Software Test Engineer',
+        description: [
+            "Functional, Regression, Exploratory, API, Smoke, Sanity",
+        ]
+    },
+    {
         company: 'TP',
         date: 'Sept. 2025 - Dec. 2025',
         position: 'Fraud Analyst',
