@@ -41,7 +41,7 @@ const Profile = () => {
           </FadeUp>
         </div>
         
-          <div className="lg:w-1/2">
+          <div className="lg:w-1/2 hidden">
           <Link href='/project'>
             <FadeUp delay={1}>
               <div className="w-full hover:scale-105 my-4 lg:my-0 cursor-pointer flex gap-2 md:gap-2 items-center h-[133px] 

@@ -47,7 +47,7 @@ const navItems = [
               </FadeIn>
               <nav className="hidden lg:flex gap-5 font-bold">
                 {navItems.map((n, index)=>{
-                  return <FadeIn delay={.5 + (index * 0.13)}>
+                  return <FadeIn index={index} delay={.5 + (index * 0.13)}>
                        <span className='cursor-pointer' onClick={() => scrollTo(n.href)}>{n.label}</span>
                     </FadeIn>
                 })}
