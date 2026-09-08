@@ -6,7 +6,7 @@ import { education } from "../../lib/data";
 import FadeInSection from "@/ui/animation/fadeOnScroll";
 const AboutMe = () => {
     return(
-        <section id="about" className=" p-4 lg:h-screen bg-white pt-10">
+        <section id="about" className=" p-4  bg-white pt-10">
             
             <div className="max-w-[1200px] mx-auto mt-4">
                 <FadeInSection>

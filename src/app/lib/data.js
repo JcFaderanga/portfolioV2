@@ -23,7 +23,7 @@ export const socialMedia = {
 export const education = [
     {
         school: 'Pamantasan ng Lungsod ng Muntinlupa',
-        year: '2024 - Present',
+        year: '2024 - 2025',
         level: 'College',
         course: 'Bachelor of Science in Information Technology',
     },
@@ -56,10 +56,15 @@ export const education = [
 export const workExperience = [
     {
         company: 'AMSG88 IT SOLUTIONS OPC',
-        date: 'Mar. 2026 - Present',
+        date: 'Mar. 2026 - Sept. 2026',
         position: 'Software Test Engineer',
         description: [
-            "Functional, Regression, Exploratory, API, Smoke, Sanity",
+            "Created and designed test cases for web applications by developing positive, negative, and out-of-the-box scenarios based on requirements, improving test coverage and early defect detection.",
+            "Performed end-to-end testing of employee training workflows by validating authentication, course enrollment and access, video and learning content, quizzes, progress and completion tracking, and certificate generation, ensuring accurate functionality throughout the learning process.",
+            "Performed role-based access testing across Admin, Partner Admin, Manager Admin, Manager, and Employee accounts by validating permissions, feature access, data visibility, and restrictions, ensuring each role could access only permitted functions and information.",
+            "Conducted functional, regression, UI, and cross-browser testing across multiple devices, browsers, and environments by validating application functionality, user interactions, navigation, and overall user experience.",
+            "Identified, documented, and tracked software defects using JIRA by providing detailed reproduction steps, expected and actual results, and supporting evidence, while collaborating with QA engineers to investigate issues, retest fixes, and verify defect resolution.",
+            "Conducted API testing using Postman and database validation using SQL by verifying API responses, data accuracy, positive and negative scenarios, and system behavior, contributing to reliable data processing and application stability."
         ]
     },
     {
@@ -85,7 +90,27 @@ export const workExperience = [
         company: 'Teleperformance',
         date: 'Sept. 2023 - Jan. 2024',
         position: 'CSR & Learning Coach',
-        description: ["Managed inbound calls on a health care account, addressing a wide range of customer inquiries including billing, account maintenance, general support, claim and benefits."]
+        description: [
+            "Handled inbound healthcare calls, addressing inquiries on billing, account maintenance, claims, benefits, mobile app, and web support.",
+            "Reviewed and processed insurance claims, resolving denials, assisting with appeals, and guiding members through approval or reconsideration.",
+            "Explained policy benefits and coverage, clarifying inclusions/exclusions and advising on benefit utilization.",
+            "Assisted with PCP changes, locating in-network providers/facilities, billing, payments, and policy reinstatements.",
+            "Managed HMO, PPO, and POS policies for TX, MT, IL, NM, and OK.",
+            "Provided troubleshooting for online accounts, resolving access, login, and technical issues, and escalating bugs to IT."
+        ]
+    },
+    {
+        company: 'Frelance Software Tester',
+        date: '2022 - 2023',
+        position: ' Software Tester',
+        description: [
+           "Collaborated with clients and a small project team to understand requirements, implement requested features, resolve issues, and deliver functional and reliable web applications.",
+            "Created basic and custom test automation scripts using JavaScript to automate repetitive testing scenarios and improve testing efficiency.",
+            "Developed and maintained responsive web applications based on client requirements using modern web technologies, focusing on usability, functionality, and cross-browser compatibility.",
+            "Designed and executed manual test cases covering positive, negative, and out-of-the-box scenarios to validate web application functionality and identify potential defects early.",
+            "Identified, documented, and tracked software issues by providing detailed reproduction steps, expected and actual results, and supporting evidence to ensure efficient debugging and resolution.",
+            "Performed API testing using Postman and data validation using SQL, while troubleshooting frontend and backend issues to ensure reliable application functionality and data accuracy."
+        ]
     },
 ]
 export const skills = [
@@ -95,16 +120,16 @@ export const skills = [
     { name: 'react', image: '/assets/react.png',exp: '1yrs Exp.', category: 'frontend' },
     { name: 'node', image: '/assets/nodejs.png',exp: '1yrs Exp.', category: 'backend' },
     // { name: 'express', image: '/assets/express.png',exp: '1yrs Exp.', category: 'backend' },
-    { name: 'mongo', image: '/assets/mongodb.png',exp: '1mo Exp.', category: 'backend' },
+    // { name: 'mongo', image: '/assets/mongodb.png',exp: '1mo Exp.', category: 'backend' },
     { name: 'mysql', image: '/assets/mysql.png',exp: '5yrs Exp.', category: 'backend' },
     // { name: 'postgres', image: '/assets/postgresql.png',exp: '6mos Exp.', category: 'backend' },
     { name: 'typescript', image: '/assets/typescript.png',exp: '1mo Exp.', category: 'frontend' },
     { name: 'tailwind', image: '/assets/tailwindcss.png',exp: '2yrs Exp.', category: 'frontend' },
-    { name: 'nextjs', image: '/assets/nextjs.png',exp: '3mos Exp.', category: 'frontend' },
+    // { name: 'nextjs', image: '/assets/nextjs.png',exp: '3mos Exp.', category: 'frontend' },
     { name: 'vscode', image: '/assets/vscode.png',exp: '3yrs Exp.', category: 'tools' },
     { name: 'figma', image: '/assets/figma.png',exp: '2yrs Exp.', category: 'tools' },
     { name: 'canva', image: '/assets/canva.png',exp: '6mos Exp.', category: 'tools' },
-    { name: 'expo', image: '/assets/expo.png',exp: '4mos Exp.', category: 'frontend' },
+    // { name: 'expo', image: '/assets/expo.png',exp: '4mos Exp.', category: 'frontend' },
     { name: 'git', image: '/assets/git.png',exp: '2yrs Exp.', category: 'tools' },
     { name: 'trello', image: '/assets/trello.png',exp: '3yrs Exp.', category: 'tools' },
 ];
@@ -127,7 +152,7 @@ export const projects = [
         projectType: 'Personal Project',
         description:
           '"A personal management web app that helps users stay organized by tracking expenses, managing bills, and securely storing important account information for easy access."',
-        image: '/assets/under_construction_transparent.png',
+        image: '/assets/ITrackMoney.png',
         tech: [
             'TypeScript',
             'Vite',

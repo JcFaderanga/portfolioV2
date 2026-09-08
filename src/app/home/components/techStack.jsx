@@ -26,7 +26,7 @@ const TechStack = () => {
     return (
         <section id="tech" className="gradient-color-v3 flex flex-col py-10 px-4 justify-center lg:h-[700px] ">
             <FadeInSection>
-            <h1 className="text-3xl text-center font-bold">Tech Stack</h1>
+            <h1 className="text-3xl text-center font-bold">Tech Stack & tools </h1>
 
             <div className="max-w-[1600px] mx-auto">
                 {/* Filter Buttons */}

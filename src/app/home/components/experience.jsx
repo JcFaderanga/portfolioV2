@@ -31,6 +31,7 @@ const Experience = () => {
                     return <FadeInSection key={index}><ExperienceBox props={work} /></FadeInSection>
                     }   
                 )}
+                {/* <FadeInSection ><ExperienceBox props={workExperience[0]} /></FadeInSection> */}
             </div>
         </div>
     )
